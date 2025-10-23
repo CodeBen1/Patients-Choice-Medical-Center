@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Patients Choice Medical Center Mukura</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Unified CSS File -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="Images/PCMC BUKEDEA LOGO.png">
-  <style>
-    body {
-      background-color: skyblue;
-    }
-  </style>
+  <link rel="icon" type="image/jpeg" href="images/PCMC-BUKEDEA-LOGO.jpg">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="logo">
-        <h1>Patients Choice Medical Center Mukura</h1>
+        <img src="images/PCMC-BUKEDEA-LOGO.jpg" alt="PCMC Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Patients Choice Medical Center Mukura</h1>
+          <p>Quality Healthcare Services</p>
+        </div>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <div class="hamburger">
           <div class="bar"></div>
@@ -37,41 +35,121 @@
     </div>
   </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us for appointments and inquiries</p>
+    </div>
+  </section>
+
   <section class="contact">
     <div class="container">
-      <h2>Contact Us</h2>
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="header-underline"></div>
+        <p class="section-subtitle">We're here to provide you with the best medical care</p>
+      </div>
+
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Visit Us</h3>
-          <p>
-            Along Kumi Soroti Highway<br>
-            Mukura Trading Center
-          </p>
-          <h3>Call Us</h3>
-          <p>
-              Consultation:+256 779 950 359<br>
-              Emergency: +256 770 477 206
-          </p>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Visit Us</h3>
+              <p>Along Kumi Soroti Highway<br>Mukura Trading Center</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Call Us</h3>
+              <p>Consultation: +256 779 950 359<br>Emergency: +256 770 477 206</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email Us</h3>
+              <p>info@medicalcenter.com<br>patientschoicemedicalcentermuk@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Opening Hours</h3>
+              <p>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM<br>Sun: Emergency Only</p>
+            </div>
+          </div>
         </div>
-        <form 
-  class="contact-form" 
-  action="https://formsubmit.co/patientschoicemedicalcentermuk@gmail.com" method="POST"
->
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Message" required></textarea>
-  <button type="submit" class="cta-button">Send Message</button>
-</form>
+
+        <form class="contact-form" action="https://formsubmit.co/patientschoicemedicalcentermuk@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_captcha" value="false">
+          
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <i class="fas fa-phone"></i>
+          </div>
+          
+          <div class="form-group">
+            <select name="service" required>
+              <option value="">Select Service</option>
+              <option value="consultation">General Consultation</option>
+              <option value="dispensing">Medical Dispensing</option>
+              <option value="scanning">Ultrasound Scanning</option>
+              <option value="laboratory">Laboratory Services</option>
+              <option value="maternal">Maternal Health</option>
+              <option value="emergency">Emergency Care</option>
+            </select>
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+          
+          <button type="submit" class="cta-button">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
       </div>
-      <div class="map">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1234567890123!2d33.852!3d1.577361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMzQnMzguNSJOIDMzwrA1MScwNy4yIkU!5e0!3m2!1sen!2sug!4v1234567890123" 
-          width="100%" 
-          height="300" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy"
-        ></iframe>
+
+      <div class="map-section">
+        <h3>Find Us Here</h3>
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.1234567890123!2d33.852!3d1.577361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMzQnMzguNSJOIDMzwrA1MScwNy4yIkU!5e0!3m2!1sen!2sug!4v1234567890123" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -92,17 +170,27 @@
         <div class="footer-section">
           <h4 class="footer-heading">Contact Information</h4>
           <ul class="footer-info">
-            <li>Along Mbale Soroti Highway</li>
-            <li>Mukura Trading Center</li>
-            <li>Email: info@medicalcenter.com</li>
-            <li>Phone: +256 770 477 206</li>
+            <li><i class="fas fa-map-marker-alt"></i> Along Mbale Soroti Highway</li>
+            <li><i class="fas fa-map-pin"></i> Mukura Trading Center</li>
+            <li><i class="fas fa-envelope"></i> info@medicalcenter.com</li>
+            <li><i class="fas fa-phone"></i> +256 770 477 206</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <ul class="footer-info">
+            <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+            <li>Saturday: 9:00 AM - 4:00 PM</li>
+            <li>Sunday: Emergency Only</li>
+            <li>24/7 Emergency Services</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Patient's Choice Medical Center Mukura</p>
-        <p>Providing Quality Healthcare Services</p>
+        <p>&copy; 2024 Patient's Choice Medical Center Mukura. All rights reserved.</p>
+        <p>Providing Quality Healthcare Services to Our Community</p>
         <p>Web Developer: benokiring91@gmail.com</p>
       </div>
     </div>

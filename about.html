@@ -4,28 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Patients Choice Medical Center Mukura</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Unified CSS File -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="images/PCMC BUKEDEA LOGO.png">
-  <!-- Page-specific style -->
-  <style>
-    body {
-      background-color: skyblue;
-    }
-  </style>
+  <link rel="icon" type="image/jpeg" href="images/PCMC-BUKEDEA-LOGO.jpg">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="logo">
-        <h1>Patients Choice Medical Center Mukura</h1>
+        <img src="images/PCMC-BUKEDEA-LOGO.jpg" alt="PCMC Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Patients Choice Medical Center Mukura</h1>
+          <p>Quality Healthcare Services</p>
+        </div>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" class="active">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -38,18 +35,77 @@
     </div>
   </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Learn more about our mission, team, and commitment to healthcare</p>
+    </div>
+  </section>
+
   <section class="about">
     <div class="container">
-      <h2>About Us</h2>
       <div class="about-content">
         <div class="about-text">
-          <h3>Our Mission</h3>
-          <p>Providing accessible, quality healthcare to the Mukura community and surrounding areas.</p>
-          <h3>Our Team</h3>
-          <p>Led by Obol Sam, a qualified Medical Clinical Officer with over 10 years of experience.</p>
+          <div class="section-header">
+            <h2>Our Story</h2>
+            <div class="header-underline"></div>
+          </div>
+          <p class="lead">Patients Choice Medical Center Mukura has been serving the community with dedication and excellence in healthcare services.</p>
+          
+          <div class="mission-vision">
+            <div class="mv-card">
+              <div class="mv-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>Our Mission</h3>
+              <p>Providing accessible, quality healthcare to the Mukura community and surrounding areas through compassionate service and modern medical practices.</p>
+            </div>
+            <div class="mv-card">
+              <div class="mv-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3>Our Vision</h3>
+              <p>To be the leading healthcare provider in the region, recognized for excellence in patient care and community health improvement.</p>
+            </div>
+          </div>
+
+          <div class="team-section">
+            <h3>Our Leadership</h3>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="images/medical-officer.jpg" alt="Medical Clinical Officer">
+              </div>
+              <div class="team-info">
+                <h4>Obol Sam</h4>
+                <p class="team-role">Medical Clinical Officer</p>
+                <p class="team-exp">With over 10 years of experience in medical practice, Obol Sam leads our team with expertise and dedication to patient care.</p>
+                <div class="team-qualifications">
+                  <span class="qual-tag">Medical Clinical Officer</span>
+                  <span class="qual-tag">10+ Years Experience</span>
+                  <span class="qual-tag">Community Health Specialist</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-image">
-          <img src="Images/photo_2025-04-16_15-16-07.jpg" alt="Medical Center">
+        
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5K+</div>
+            <div class="stat-label">Patients Served</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Emergency Care</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Patient Focused</div>
+          </div>
         </div>
       </div>
     </div>
@@ -71,17 +127,27 @@
         <div class="footer-section">
           <h4 class="footer-heading">Contact Information</h4>
           <ul class="footer-info">
-            <li>Along Mbale Soroti Highway</li>
-            <li>Mukura Trading Center</li>
-            <li>Email: info@medicalcenter.com</li>
-            <li>Phone: +256 770 477 206</li>
+            <li><i class="fas fa-map-marker-alt"></i> Along Mbale Soroti Highway</li>
+            <li><i class="fas fa-map-pin"></i> Mukura Trading Center</li>
+            <li><i class="fas fa-envelope"></i> info@medicalcenter.com</li>
+            <li><i class="fas fa-phone"></i> +256 770 477 206</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <ul class="footer-info">
+            <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+            <li>Saturday: 9:00 AM - 4:00 PM</li>
+            <li>Sunday: Emergency Only</li>
+            <li>24/7 Emergency Services</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Patient's Choice Medical Center Mukura</p>
-        <p>Providing Quality Healthcare Services</p>
+        <p>&copy; 2024 Patient's Choice Medical Center Mukura. All rights reserved.</p>
+        <p>Providing Quality Healthcare Services to Our Community</p>
         <p>Web Developer: benokiring91@gmail.com</p>
       </div>
     </div>

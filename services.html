@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Patients Choice Medical Center Mukura</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Services | Patients Choice Medical Center Mukura</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Unified CSS File -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="images/PCMC BUKEDEA LOGO.png">
+  <link rel="icon" type="image/jpeg" href="images/PCMC-BUKEDEA-LOGO.jpg">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="logo">
-        <h1>Patients Choice Medical Center Mukura</h1>
+        <img src="images/PCMC-BUKEDEA-LOGO.jpg" alt="PCMC Logo" class="logo-img">
+        <div class="logo-text">
+          <h1>Patients Choice Medical Center Mukura</h1>
+          <p>Quality Healthcare Services</p>
+        </div>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="hamburger">
@@ -32,50 +35,139 @@
     </div>
   </header>
 
+  <section class="page-hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Comprehensive healthcare services for you and your family</p>
+    </div>
+  </section>
+
   <section class="services">
     <div class="container">
-      <h2>Our Services</h2>
+      <div class="section-header">
+        <h2>Medical Services We Offer</h2>
+        <div class="header-underline"></div>
+        <p class="section-subtitle">Quality healthcare services delivered with compassion and expertise</p>
+      </div>
+
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-card-img">
-            <!-- Replace with your actual image path -->
-            <img src="Images/consultaion.jfif" alt="Doctor consulting with patient">
+          <div class="service-icon">
+            <i class="fas fa-stethoscope"></i>
           </div>
-          <h3>General Consultation</h3>
-          <p>Professional medical consultation and diagnosis</p>
+          <div class="service-card-img">
+            <img src="images/consultation.jpg" alt="Doctor consulting with patient">
+          </div>
+          <div class="service-content">
+            <h3>General Consultation</h3>
+            <p>Professional medical consultation and diagnosis by experienced healthcare providers.</p>
+            <ul class="service-features">
+              <li>Comprehensive health assessment</li>
+              <li>Personalized treatment plans</li>
+              <li>Follow-up care</li>
+            </ul>
+          </div>
         </div>
+
         <div class="service-card">
-          <div class="service-card-img">
-            <!-- Replace with your actual image path -->
-            <img src="images/dispensing.jpg" alt="Emergency room staff">
+          <div class="service-icon">
+            <i class="fas fa-pills"></i>
           </div>
-          <h3>Dispensing</h3>
-          <p>All your over the counter drugs and other class b drugs</p>
+          <div class="service-card-img">
+            <img src="images/dispensing.jpg" alt="Pharmacy dispensing">
+          </div>
+          <div class="service-content">
+            <h3>Medical Dispensing</h3>
+            <p>Complete pharmacy services with over-the-counter and prescription medications.</p>
+            <ul class="service-features">
+              <li>Quality assured medications</li>
+              <li>Professional guidance</li>
+              <li>Affordable pricing</li>
+            </ul>
+          </div>
         </div>
+
         <div class="service-card">
-          <div class="service-card-img">
-            <!-- Replace with your actual image path -->
-            <img src="images/scaning.jpg" alt="Emergency room staff">
+          <div class="service-icon">
+            <i class="fas fa-procedures"></i>
           </div>
-          <h3>Ultra Sound Scanning</h3>
-          <p>Quality Scan with trusted findings</p>
+          <div class="service-card-img">
+            <img src="images/scanning.jpg" alt="Ultrasound scanning">
+          </div>
+          <div class="service-content">
+            <h3>Ultrasound Scanning</h3>
+            <p>Advanced ultrasound diagnostic services with accurate and reliable results.</p>
+            <ul class="service-features">
+              <li>High-quality imaging</li>
+              <li>Expert interpretation</li>
+              <li>Quick results</li>
+            </ul>
+          </div>
         </div>
+
         <div class="service-card">
-          <div class="service-card-img">
-            <!-- Replace with your actual image path -->
-            <img src="images/lab.jpg" alt="Emergency room staff">
+          <div class="service-icon">
+            <i class="fas fa-microscope"></i>
           </div>
-          <h3>Laboratory</h3>
-          <p>All your microbiological tests and Rapid Tests</p>
+          <div class="service-card-img">
+            <img src="images/laboratory.jpg" alt="Laboratory testing">
+          </div>
+          <div class="service-content">
+            <h3>Laboratory Services</h3>
+            <p>Comprehensive laboratory testing including microbiology and rapid diagnostic tests.</p>
+            <ul class="service-features">
+              <li>Blood tests</li>
+              <li>Urine analysis</li>
+              <li>Rapid diagnostic tests</li>
+            </ul>
+          </div>
         </div>
+
         <div class="service-card">
-          <div class="service-card-img">
-            <!-- Replace with your actual image path -->
-            <img src="Images/antenatal.jfif" alt="Mother and newborn">
+          <div class="service-icon">
+            <i class="fas fa-baby"></i>
           </div>
-          <h3>Maternal Health</h3>
-          <p>Antenatal and postnatal care services</p>
+          <div class="service-card-img">
+            <img src="images/antenatal.jpg" alt="Maternal health care">
+          </div>
+          <div class="service-content">
+            <h3>Maternal Health</h3>
+            <p>Complete antenatal and postnatal care services for mothers and babies.</p>
+            <ul class="service-features">
+              <li>Antenatal care</li>
+              <li>Postnatal checkups</li>
+              <li>Child immunization</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+          <div class="service-card-img">
+            <img src="images/emergency.jpg" alt="Emergency services">
+          </div>
+          <div class="service-content">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency medical services for urgent healthcare needs.</p>
+            <ul class="service-features">
+              <li>24/7 availability</li>
+              <li>Emergency response</li>
+              <li>Critical care</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Need Medical Assistance?</h2>
+        <p>Contact us today for quality healthcare services</p>
+        <a href="contact.html" class="cta-button">Book Appointment</a>
       </div>
     </div>
   </section>
@@ -96,17 +188,27 @@
         <div class="footer-section">
           <h4 class="footer-heading">Contact Information</h4>
           <ul class="footer-info">
-            <li>Along Mbale Soroti Highway</li>
-            <li>Mukura Trading Center</li>
-            <li>Email: info@medicalcenter.com</li>
-            <li>Phone: +256 770 477 206</li>
+            <li><i class="fas fa-map-marker-alt"></i> Along Mbale Soroti Highway</li>
+            <li><i class="fas fa-map-pin"></i> Mukura Trading Center</li>
+            <li><i class="fas fa-envelope"></i> info@medicalcenter.com</li>
+            <li><i class="fas fa-phone"></i> +256 770 477 206</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <ul class="footer-info">
+            <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+            <li>Saturday: 9:00 AM - 4:00 PM</li>
+            <li>Sunday: Emergency Only</li>
+            <li>24/7 Emergency Services</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Patient's Choice Medical Center Mukura</p>
-        <p>Providing Quality Healthcare Services</p>
+        <p>&copy; 2024 Patient's Choice Medical Center Mukura. All rights reserved.</p>
+        <p>Providing Quality Healthcare Services to Our Community</p>
         <p>Web Developer: benokiring91@gmail.com</p>
       </div>
     </div>
